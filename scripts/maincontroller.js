@@ -124,6 +124,44 @@
 
 	
 	});
+             
+             
+       	$scope.$on('contactEvent', function(){
+                
+            
+            
+	           if(contact==1)return;
+             contact=1;
+            
+            
+		$scope.page="contact.htm";
+       
+            console.log("about class added")
+            
+        if(about==1)
+            contact=0;
+        
+         
+        if(home==1)
+            home=0;
+            
+            
+        if(sitemap==1)
+            sitemap=0;
+            
+            
+        if(service==1)
+            service=0;
+            
+            
+        console.log(home);
+            console.log(about);
+            console.log(contact);
+            console.log(sitemap);
+            console.log(service); 
+
+	
+	});
             
          });
 

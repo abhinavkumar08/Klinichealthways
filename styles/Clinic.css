@@ -312,9 +312,25 @@ color: white !important;
 {
 	float: left;
 }
-
-.map-footer
+.contact-form-leave-a-message
 {
-	float: right;
-	margin-right: 50px;
+	float: left;
+    margin: 40px 100px 100px 0px;
+}
+
+.contact-us-details
+{
+	float: left;
+}
+
+.contact-us-img
+{
+	height: 300px;
+    width: 500px;
+    margin-top: 50px;
+}
+
+.contact-wrap
+{
+	margin-left: 500px;
 }
