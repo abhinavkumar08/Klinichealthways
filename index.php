@@ -19,12 +19,12 @@ $mail->SetFrom("abhinavkumar8008@gmail");
 $mail->Subject = "Test";
 $mail->Body = "Name : " . $_POST['name'] . "<br />" . "Email Id : " . $_POST['emailid'] . "<br />" . "Phone Number : " . $_POST['phonenumber'] . "<br />" . "Message : " . $_POST['message'] . "<br />" . "Gender : " . $_POST['gender'];
 $mail->AddAddress("abhinavkumar08@gmail.com");
-
+ header('Location: html/redirect.html');
  if(!$mail->Send()) {
     echo "Mailer Error: " . $mail->ErrorInfo;
  } else {
  		echo "REDIRECTING TO DIFFERENT PAGE <br />";
-	 header('Location: html/redirect.html');
+	
  }
 
 }
