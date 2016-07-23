@@ -139,7 +139,7 @@
             console.log("about class added")
             
         if(about==1)
-            contact=0;
+            about=0;
         
          
         if(home==1)
@@ -162,6 +162,47 @@
 
 	
 	});
+             
+             
+             
+      	$scope.$on('siteMapEvent', function(){
+                
+            
+            
+	           if(sitemap==1)return;
+             sitemap=1;
+            
+            
+		$scope.page="sitemap.htm";
+       
+            
+            
+        if(about==1)
+            about=0;
+        
+         
+        if(home==1)
+            home=0;
+            
+            
+        if(contact==1)
+            contact=0;
+            
+            
+        if(service==1)
+            service=0;
+            
+            
+        console.log(home);
+            console.log(about);
+            console.log(contact);
+            console.log(sitemap);
+            console.log(service); 
+
+	
+	});
+             
+             
             
          });
 
@@ -172,6 +213,18 @@
         $scope.$on('aboutEvent', function(){
             
             console.log("hello");
+        })
+        
+    });
+
+
+mainApp.controller('sitemapcontroller', function($scope){
+    
+    var url="https://www.google.co.in/maps/place/Klinic+Healthways,+IGNOU+Main+Road,+Sainik+Farm,+New+Delhi,+Delhi/@28.51902,77.1944954,15z/data=!4m5!3m4!1s0x390ce1efe35a6d19:0x52e734f2738a5db6!8m2!3d28.5187741!4d77.206791";
+       
+        $scope.$on('mapclick', function(){
+            
+            window.open(url,'_blank');
         })
         
     });

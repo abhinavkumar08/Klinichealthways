@@ -56,7 +56,7 @@
       <li ng-click="$emit('aboutEvent')" class="header-li"><a class="header-li-pointer" href="#">About Us</a></li>
       <li ng-click="$emit('servicesEvent')" class="header-li"><a class="header-li-pointer" href="#">Services</a></li>
       <li ng-click="$emit('contactEvent')" class="header-li"><a class="header-li-pointer" href="#">Contact Us</a></li>
-      <li ng-click="$emit('siteMapEvent')" class="header-li"><a class="header-li-pointer" href="#">siteMap</a></li>
+      <li ng-click="$emit('siteMapEvent')" class="header-li"><a class="header-li-pointer" href="#">Sitemap</a></li>
      
     </ul>
   </div>
@@ -392,6 +392,30 @@
     
     </div>
 
+    
+</script>
+    
+<script type="text/ng-template" id="sitemap.htm">
+
+<div class="sitemapwrap clearfix" ng-controller="sitemapcontroller">
+<div class="map-details">
+<img ng-click="$emit('mapclick')" class="map-img" src="../images/sainikfarm.png" alt="cannot load location map" />
+</div>
+    
+<div class="map-address">
+    <p><img class="address-img" src="../images/address-img.png" alt="cannot load image" width="20px" height="20px"  /> : Klinic Healthways,
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Floor,<br/>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DDA market Anupam Apartment,<br />  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IGNOU road.<br />
+        
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New Delhi-110068</p>
+    <p><img class="address-img" src="../images/email.png" alt="cannot load image" width="20px" height="20px" />  : klinichealthways.delhi@gmail.com</p>
+    <p><img class="address-img" src="../images/phone-img.png" alt="cannot load image" width="20px" height="20px" />  : </p>
+    <p><img class="address-img" src="../images/clock-time.png" alt="cannot load image" width="20px" height="20px" /> : Clinic 10 A.M. to 8 P.M.<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lab : 8 A.M. to 8 P.M.
+    </p>
+</div>
+
+</div>
     
 </script>
 

@@ -334,3 +334,19 @@ color: white !important;
 {
 	margin-left: 500px;
 }
+
+.map-details
+{
+	float: left;
+    margin: 40px 40px 40px 470px;
+    cursor: pointer;
+}
+
+.map-address
+{
+	float: left;
+	background: #EDF1F2;
+	color: grey;
+	font-family : Alice !important;
+	margin-top: 40px;
+}
