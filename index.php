@@ -4,7 +4,8 @@
 include_once("html/Clinic.html"); 
 require_once('phpmailer/PHPMailerAutoload.php');
 
-
+if($_POST['submit'])
+{
 $mail = new PHPMailer(); // create a new object
 $mail->IsSMTP(); // enable SMTP
 $mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
@@ -26,7 +27,7 @@ $mail->AddAddress("abhinavkumar08@gmail.com");
 	 header('Location: http://www.google.com');
  }
 
-
+}
 
 
 ?>
