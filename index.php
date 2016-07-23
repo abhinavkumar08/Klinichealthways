@@ -17,7 +17,7 @@ $mail->Username = "abhinavkumar8008@gmail.com";
 $mail->Password = "Newpass19";
 $mail->SetFrom("abhinavkumar8008@gmail");
 $mail->Subject = "Test";
-$mail->Body = "";
+$mail->Body = "Name : " . $_POST['name'] . "<br />" . "Email Id : " . $_POST['emailid'] . "<br />" . "Phone Number : " . $_POST['phonenumber'] . "<br />" . "Message : " . $_POST['message'] . "<br />" . "Gender : " . $_POST['gender'];
 $mail->AddAddress("abhinavkumar08@gmail.com");
 
  if(!$mail->Send()) {
