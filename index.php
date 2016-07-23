@@ -1,7 +1,7 @@
-<?php
+<?php 
 include_once("html/Clinic.html"); 
 require_once('phpmailer/PHPMailerAutoload.php');
-if (isset($_REQUEST['submit'])) {
+if($_POST['submit']){
 $mail = new PHPMailer(); // create a new object
 $mail->IsSMTP(); // enable SMTP
 $mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
@@ -14,13 +14,15 @@ $mail->Username = "abhinavkumar8008@gmail.com";
 $mail->Password = "Newpass19";
 $mail->SetFrom("abhinavkumar8008@gmail");
 $mail->Subject = "Test";
-$mail->Body = "hello";
+$mail->Body = "Name : " . $_POST['name'] . "<br />" . "Email Id : " . $_POST['emailid'] . "<br />" . "Phone Number : " . $_POST['phonenumber'] . "<br />" . "Message : " . $_POST['message'] . "<br />" . "Gender : " . $_POST['gender'];
 $mail->AddAddress("abhinavkumar08@gmail.com");
-
+ header('Location: html/redirect.html');
  if(!$mail->Send()) {
     echo "Mailer Error: " . $mail->ErrorInfo;
  } else {
-	 header('Location: http://www.google.com');
+ 		echo "REDIRECTING TO DIFFERENT PAGE <br />";
+	
  }
-} 
+
+}
 ?>
