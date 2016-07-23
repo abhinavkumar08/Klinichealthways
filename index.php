@@ -1,6 +1,5 @@
 <?php 
 
-#header( 'Location: ./html/Clinic.html' ) ; 
 include_once("html/Clinic.html"); 
 require_once('phpmailer/PHPMailerAutoload.php');
 
@@ -18,7 +17,7 @@ $mail->Username = "abhinavkumar8008@gmail.com";
 $mail->Password = "Newpass19";
 $mail->SetFrom("abhinavkumar8008@gmail");
 $mail->Subject = "Test";
-$mail->Body = "hello";
+$mail->Body = $_POST['name'] . $_POST['emailid'] . $_POST['phonenumber'] . $_POST['message'] .$_POST['gender'];
 $mail->AddAddress("abhinavkumar08@gmail.com");
 
  if(!$mail->Send()) {
