@@ -23,7 +23,7 @@ $mail->AddAddress("abhinavkumar08@gmail.com");
  if(!$mail->Send()) {
     echo "Mailer Error: " . $mail->ErrorInfo;
  } else {
-	 header('Location: http://www.google.com');
+	 header('Location: html/redirect.html');
  }
 
 }
