@@ -20,7 +20,7 @@ $mail->AddAddress("abhinavkumar08@gmail.com");
  if(!$mail->Send()) {
     echo "Mailer Error: " . $mail->ErrorInfo;
  } else {
- 		echo "REDIRECTING TO DIFFERENT PAGE <br />";
+ 		<script>alert("Your message has been sent successfully");</script>
 	
  }
 
