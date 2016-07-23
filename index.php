@@ -5,7 +5,6 @@ include_once("html/Clinic.html");
 require_once('phpmailer/PHPMailerAutoload.php');
 
 
-echo "line8";
 $mail = new PHPMailer(); // create a new object
 $mail->IsSMTP(); // enable SMTP
 $mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
