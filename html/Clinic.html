@@ -79,20 +79,20 @@
     <div class="column-bind clearfix">
         <div class="column1-footer">
             <ul>
-                <li class="footer-li">Home</li>
-                <li class="footer-li">About Us</li>
-                <li class="footer-li">Contact Us</li>
-                <li class="footer-li">SiteMap</li>
+                <li ng-click="$emit('homeEvent')" class="footer-li">Home</li>
+                <li ng-click="$emit('aboutEvent')" class="footer-li">About Us</li>
+                <li ng-click="$emit('contactEvent')" class="footer-li">Contact Us</li>
+                <li ng-click="$emit('siteMapEvent')" class="footer-li">SiteMap</li>
              
             </ul>
         </div>
     
         <div class="column2-footer">
             <ul>
-                <li class="footer-li">Breathe And Sleep Klinic</li>
-                <li class="footer-li">South Delhi Dental Klinic</li>
-                <li class="footer-li">Family PolyKlinic & Infectious Disease Center</li>
-                <li class="footer-li">KDC Labs</li>
+                <li ng-click="$emit('breathesleep')" class="footer-li">Breathe And Sleep Klinic</li>
+                <li ng-click="$emit('dental')" class="footer-li">South Delhi Dental Klinic</li>
+                <li ng-click="$emit('polyklinic')" class="footer-li">Family PolyKlinic & Infectious Disease Center</li>
+                <li ng-click="$emit('kdclabs')" class="footer-li">KDC Labs</li>
              
             </ul>
         </div>
@@ -146,21 +146,21 @@
     <p class="home-service-reason">Listed below four reasons to choose us !!!</p>
     <div class="home-service-ul clearfix">  
     <ul class="nav navbar-nav menu">
-       <li class="home-service-li"><img src="../images/about-us-pulmonology.jpg" class="img-circle home-service-li-img" alt="Cinque Terre">
+       <li ng-click="$emit('breathesleep')" class="home-service-li"><img src="../images/about-us-pulmonology.jpg" class="img-circle home-service-li-img" alt="Cinque Terre">
      <p class="home-service-li-header">Breathe & Sleep</p>
         <p class="home-service-li-header">Klinic</p>
   </li>
-  <li class="home-service-li"><img src="../images/home-dental.jpg" class="img-circle home-service-li-img" alt="Cinque Terre">
+  <li ng-click="$emit('dental')" class="home-service-li"><img src="../images/home-dental.jpg" class="img-circle home-service-li-img" alt="Cinque Terre">
      <p class="home-service-li-header">Dental Klinic</p> 
   </li>
-  <li class="home-service-li">
+  <li ng-click="$emit('polyklinic')" class="home-service-li">
     <img src="../images/home-infectious.jpg" class="img-circle home-service-li-img" alt="Cinque Terre">
      <p class="home-service-li-header">Family PolyKlinic</p>  
        <p class="home-service-li-header"> & Infectious</p>  
        <p class="home-service-li-header">  Disease Center</p> 
    </li>
     
-    <li class="home-service-li">
+    <li ng-click="$emit('kdclabs')" class="home-service-li">
      <img src="../images/home-dermatology.jpg" class="img-circle home-service-li-img" alt="Cinque Terre">
      <p class="home-service-li-header">KDC Labs</p>     
         
@@ -181,21 +181,21 @@
     <p class="home-service-reason">Listed below four reasons to choose us !!!</p>
     <div class="home-service-ul clearfix">  
     <ul class="nav navbar-nav menu">
-       <li class="home-service-li"><img src="../images/about-us-pulmonology.jpg" class="img-circle home-service-li-img" alt="Cinque Terre">
+       <li ng-click="$emit('breathesleep')" class="home-service-li"><img src="../images/about-us-pulmonology.jpg" class="img-circle home-service-li-img" alt="Cinque Terre">
      <p class="home-service-li-header">Breathe & Sleep</p>
         <p class="home-service-li-header">Klinic</p>
   </li>
-  <li class="home-service-li"><img src="../images/home-dental.jpg" class="img-circle home-service-li-img" alt="Cinque Terre">
+  <li ng-click="$emit('dental')" class="home-service-li"><img src="../images/home-dental.jpg" class="img-circle home-service-li-img" alt="Cinque Terre">
      <p class="home-service-li-header">Dental Klinic</p> 
   </li>
-  <li class="home-service-li">
+  <li ng-click="$emit('polyklinic')" class="home-service-li">
     <img src="../images/home-infectious.jpg" class="img-circle home-service-li-img" alt="Cinque Terre">
      <p class="home-service-li-header">Family PolyKlinic</p>  
        <p class="home-service-li-header"> & Infectious</p>  
        <p class="home-service-li-header">  Disease Center</p> 
    </li>
     
-    <li class="home-service-li">
+    <li ng-click="$emit('kdclabs')" class="home-service-li">
      <img src="../images/home-dermatology.jpg" class="img-circle home-service-li-img" alt="Cinque Terre">
      <p class="home-service-li-header">KDC Labs</p>     
         
@@ -308,10 +308,10 @@
 <div class="services-header"><h2>SERVICES</h2></div>
 <div class="setvices-offered">
 	<ul class="list-group">
-<li class="service-type list-group-item">Breathe And Sleep Klinic</li>
-<li class="service-type list-group-item">South Delhi Dental Klinic</li>
-<li class="service-type list-group-item">Family PolyKlinic & Infectious Disease Center</li>
-<li class="service-type list-group-item">KDC Labs</li>
+<li ng-click="$emit('breathesleep')" class="service-type list-group-item">Breathe And Sleep Klinic</li>
+<li ng-click="$emit('dental')" class="service-type list-group-item">South Delhi Dental Klinic</li>
+<li ng-click="$emit('polyklinic')" class="service-type list-group-item">Family PolyKlinic & Infectious Disease Center</li>
+<li ng-click="$emit('kdclabs')" class="service-type list-group-item">KDC Labs</li>
 
 </ul>
 
@@ -418,7 +418,218 @@
 </div>
     
 </script>
+    
+<script type="text/ng-template" id="breathesleep.htm">
 
+<div class="wrap-breathesleep clearfix">
+
+    <div class="pic-info-breathesleep">
+        <div class="pic-breathesleep">
+            <img src="../images/breathesleep.jpg" alt="cannot dispay image" width="800px" height="300px" />
+        </div>
+        <div class="info-breathesleep">
+            <p class="breathesleep-paragraph">In era of pollution and population where smoke and stress are constantly hollowing out the life</p>
+            <p class="breathesleep-paragraph">from our mind and body, Breathe and Sleep Klinic gives you a sigh of relief. </p>
+             <p class="breathesleep-paragraph">&nbsp;</p>
+             <p class="breathesleep-paragraph">We offer:</p>
+             <p class="breathesleep-paragraph">&nbsp;</p>
+            <p class="breathesleep-paragraph">DIAGNOSTIC PROCEDURES:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;THERAPEUTIC PROCEDURES:</p>
+            <p class="breathesleep-paragraph">&nbsp;</p>
+            <p class="breathesleep-paragraph">VIDEO BRONCHOSCOPY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BI PAP THERAPY</p>
+            <p class="breathesleep-paragraph">PULMONARY FUNCTION TESTING&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C PAP THERAPY</p>
+            <p class="breathesleep-paragraph">6 MINUTE WALK TEST&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LONG TERM OXYGEN THERAPY</p>
+            <p class="breathesleep-paragraph">SUB MAXILLARY PULMONARY EXERCISE TESTING&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CHEST PHYSIOTHERAPY</p>
+            <p class="breathesleep-paragraph">POLYSOMNOGRAPHY (SLEEP STUDY)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IMMUNOTHERAPY</p>
+            <p class="breathesleep-paragraph">THORACOSCOPY</p>
+            <p class="breathesleep-paragraph">ALLERGY SKIN TESTING</p>
+            
+
+            
+            
+        </div>
+    </div>
+    
+<div class="services-extra-option">
+<div class="services-header"><h2>SERVICES</h2></div>
+<div class="setvices-offered">
+	<ul class="list-group">
+<li ng-click="$emit('breathesleep')" class="service-type list-group-item">Breathe And Sleep Klinic</li>
+<li ng-click="$emit('dental')" class="service-type list-group-item">South Delhi Dental Klinic</li>
+<li ng-click="$emit('polyklinic')" class="service-type list-group-item">Family PolyKlinic & Infectious Disease Center</li>
+<li ng-click="$emit('kdclabs')" class="service-type list-group-item">KDC Labs</li>
+
+</ul>
+
+</div>
+        
+</div>
+    
+    
+</div>
+    
+</script>
+
+    
+<script type="text/ng-template" id="dental.htm">
+
+<div class="wrap-dental clearfix">
+
+    <div class="pic-info-dental">
+        <div class="pic-dental">
+            <img src="../images/dental.jpg" alt="cannot dispay image" width="800px" height="300px" />
+        </div>
+        <div class="info-dental">
+            <p class="dental-paragraph">A smile says much more than words, no wonder now is the age of gleaming smiles and sparkling teeth.</p>
+            
+             <p class="dental-paragraph">&nbsp;</p>
+            <p class="dental-paragraph">We Offer : </p>
+            <p class="dental-paragraph">COSMETIC SMILE CORRECTION INCLUDING BLEECHING</p>
+            <p class="dental-paragraph">ENDODONTIC (RCT) TREATMENT</p>
+            <p class="dental-paragraph">ORAL PROPHYLAXIS AND POLISHING</p>
+            <p class="dental-paragraph">PREVENTIVE FILLINGS</p>
+            <p class="dental-paragraph">RESTORATIVE FILLINGS</p>
+            <p class="dental-paragraph">FIXED AND REMOVABLE PROTHETICS</p>
+            <p class="dental-paragraph">CROWNS AND IMPLANTS </p>
+            <p class="dental-paragraph">EXTRACTIONS, IMPACTIONS</p>
+            <p class="dental-paragraph">ALVEOLOPLASTY</p>
+            <p class="dental-paragraph">PAEDEATRIC DENTISTRY</p>
+            <p class="dental-paragraph">ORTHODONTIC TREATMENT</p>
+            
+            
+        </div>
+    </div>
+    
+<div class="services-extra-option">
+<div class="services-header"><h2>SERVICES</h2></div>
+<div class="setvices-offered">
+	<ul class="list-group">
+<li ng-click="$emit('breathesleep')" class="service-type list-group-item">Breathe And Sleep Klinic</li>
+<li ng-click="$emit('dental')" class="service-type list-group-item">South Delhi Dental Klinic</li>
+<li ng-click="$emit('polyklinic')" class="service-type list-group-item">Family PolyKlinic & Infectious Disease Center</li>
+<li ng-click="$emit('kdclabs')" class="service-type list-group-item">KDC Labs</li>
+
+</ul>
+
+</div>
+        
+</div>
+    
+    
+</div>
+    
+</script>
+    
+    
+
+
+<script type="text/ng-template" id="infectious.htm">
+
+<div class="wrap-infectious clearfix">
+
+    <div class="pic-info-infectious">
+        <div class="pic-infectious">
+            <img src="../images/infectious.png" alt="cannot dispay image" width="800px" height="300px" />
+        </div>
+        <div class="info-infectious">
+            <p class="dental-infectious">Polyclinic's family medicine physicians believe that establishing relationships with your entire family builds a</p>
+            <p class="dental-infectious">foundation for a lifetime of health and wellness. Patients enjoy building that bond with their family medicine </p>  
+            <p class="dental-infectious">physician and parents especially appreciate the convenience of having one doctor for everyone in the family.</p>
+            
+            <p class="dental-infectious">&nbsp;</p>
+            <p class="dental-infectious">Primary care for all ages</p>
+            <p class="dental-infectious">The Polyclinic Family Medicine practise encompasses all areas of primary care for all ages from newborns to  </p>
+            <p class="dental-infectious">seniors including</p>
+            <p class="dental-infectious">&nbsp;</p>
+            <p class="dental-infectious">Preventive Care</p>
+            <p class="dental-infectious">Managing Chronic Conditions</p>
+            <p class="dental-infectious">Pediatrics and Adolescent Health</p>
+            <p class="dental-infectious">Women Health and Gynecology</p>
+            <p class="dental-infectious">Men's Health</p>
+            <p class="dental-infectious">Sexual Health</p>
+            <p class="dental-infectious">&nbsp;</p>
+            <p class="dental-infectious">Our infectious disease clinic provides state-of-the-art diagnosis and treatment for a wide range of infections. We </p>
+            <p class="dental-infectious">also provide immunizations and othe prevention services. Our infectious disease doctors have specialized </p>
+            <p class="dental-infectious">expertise in many areas especially HIV/AIDS, TB, STDs, Skin infections, Pneumonia, various </p>
+            <p class="dental-infectious">viral, fungal and bacterial infections.</p>
+            
+        </div>
+    </div>
+    
+<div class="services-extra-option">
+<div class="services-header"><h2>SERVICES</h2></div>
+<div class="setvices-offered">
+	<ul class="list-group">
+<li ng-click="$emit('breathesleep')" class="service-type list-group-item">Breathe And Sleep Klinic</li>
+<li ng-click="$emit('dental')" class="service-type list-group-item">South Delhi Dental Klinic</li>
+<li ng-click="$emit('polyklinic')" class="service-type list-group-item">Family PolyKlinic & Infectious Disease Center</li>
+<li ng-click="$emit('kdclabs')" class="service-type list-group-item">KDC Labs</li>
+
+</ul>
+
+</div>
+        
+</div>
+    
+    
+</div>
+    
+</script>    
+    
+   
+    
+    
+
+
+<script type="text/ng-template" id="kdclabs.htm">
+
+<div class="wrap-kdclabs clearfix">
+
+    <div class="pic-info-kdclabs">
+        <div class="pic-kdclabs">
+            <img src="../images/pathology.jpg" alt="cannot dispay image" width="800px" height="300px" />
+        </div>
+        <div class="info-kdclabs">
+            <p class="dental-kdclabs">Established in 1991, KDC labs has been a metaphor of reliability, efficiency and accuracy in the </p>
+            <p class="dental-kdclabs">field of pathological testing and reporting. KDC labs have been a hallmark of quality results and  </p>  
+            <p class="dental-kdclabs">dedication to excellence.</p>
+            
+            <p class="dental-kdclabs">&nbsp;</p>
+            <p class="dental-kdclabs">Headed by one of South Delhi’s most respected pathologist, Dr. Kajal Mehra, KDC labs has stood the </p>
+            <p class="dental-kdclabs">test of time and technology inculcating the latest methods, machinery and skill to deliver the most accurate results  </p>
+            <p class="dental-kdclabs">, that too to your door steps.</p>
+            <p class="dental-kdclabs">&nbsp;</p>
+            <p class="dental-kdclabs">Being one of South Delhi’s pioneer providers of diagnostic testing, information and services that patients</p>
+            <p class="dental-kdclabs">and doctors need to make better healthcare decisions. Our services range from routine blood tests — such as </p>
+            <p class="dental-kdclabs">total cholesterol, Pap testing and white blood cell count — to complex, gene-based and molecular testing. </p>
+            <p class="dental-kdclabs">We perform medical tests that aid in the diagnosis or detection of diseases, measure the progress or recovery </p>
+            <p class="dental-kdclabs">from a disease or confirm that an individual is free from disease. We have specialized expertise in cancer, </p>
+            <p class="dental-kdclabs">cardiovascular diseases, infectious diseases, and neurology</p>
+        
+        </div>
+    </div>
+    
+<div class="services-extra-option">
+<div class="services-header"><h2>SERVICES</h2></div>
+<div class="setvices-offered">
+	<ul class="list-group">
+<li ng-click="$emit('breathesleep')" class="service-type list-group-item">Breathe And Sleep Klinic</li>
+<li ng-click="$emit('dental')" class="service-type list-group-item">South Delhi Dental Klinic</li>
+<li ng-click="$emit('polyklinic')" class="service-type list-group-item">Family PolyKlinic & Infectious Disease Center</li>
+<li ng-click="$emit('kdclabs')" class="service-type list-group-item">KDC Labs</li>
+
+</ul>
+
+</div>
+        
+</div>
+    
+    
+</div>
+    
+</script>     
+
+    
+    
 
 </div>
 

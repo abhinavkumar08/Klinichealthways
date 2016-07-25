@@ -10,13 +10,12 @@ $mail->SMTPSecure = 'tls'; // secure transfer enabled REQUIRED for Gmail
 $mail->Host = "smtp.gmail.com";
 $mail->Port = 587; // or 587
 $mail->IsHTML(true);
-$mail->Username = "abhinavkumar8008@gmail.com";
-$mail->Password = "Newpass19";
-$mail->SetFrom("abhinavkumar8008@gmail");
+$mail->Username = "klinichealthways.delhi@gmail.com";
+$mail->Password = "holocaust666";
+$mail->SetFrom("klinichealthways.delhi@gmail");
 $mail->Subject = "Test";
 $mail->Body = "Name : " . $_POST['name'] . "<br />" . "Email Id : " . $_POST['emailid'] . "<br />" . "Phone Number : " . $_POST['phonenumber'] . "<br />" . "Message : " . $_POST['message'] . "<br />" . "Gender : " . $_POST['gender'];
-$mail->AddAddress("abhinavkumar08@gmail.com");
- header('Location: html/redirect.html');
+$mail->AddAddress("klinichealthways.delhi@gmail.com");
  if(!$mail->Send()) {
     echo "Mailer Error: " . $mail->ErrorInfo;
  } else {

@@ -4,6 +4,10 @@
    var contact=0;
    var sitemap=0;
    var service=0;
+var breathe=0;
+var dental=0;
+var polyklinic=0;
+var kdclabs=0;
 
     
          
@@ -33,6 +37,11 @@
             
         if(service==1)
             service=0;
+            
+         breathe=0;
+                 dental=0;
+                 polyklinic=0;
+                 kdclabs=0;
             
             
         console.log(home);
@@ -65,7 +74,12 @@
         if(service==1)
             service=0;
             
+          breathe=0;
+                 dental=0;
+                 polyklinic=0;
+                 kdclabs=0;
             
+           
             
         console.log(home);
             console.log(about);
@@ -86,7 +100,7 @@
                 
                 
                 
-             if(about==1 || contact==1 || sitemap==1 )
+             if(about==1 || contact==1 || sitemap==1 || breathe==1 || dental==1 || polyklinic==1 || kdclabs==1)
                 {
                     $scope.page="services.htm";
                     
@@ -114,7 +128,13 @@
                 );
 		    
                 }
-                
+           
+                breathe=0;
+                 dental=0;
+                 polyklinic=0;
+                 kdclabs=0;
+            
+         
             
         console.log(home);
             console.log(about);
@@ -152,7 +172,12 @@
             
         if(service==1)
             service=0;
+        breathe=0;
+                 dental=0;
+                 polyklinic=0;
+                 kdclabs=0;
             
+             
             
         console.log(home);
             console.log(about);
@@ -192,7 +217,12 @@
         if(service==1)
             service=0;
             
+          breathe=0;
+                 dental=0;
+                 polyklinic=0;
+                 kdclabs=0;
             
+           
         console.log(home);
             console.log(about);
             console.log(contact);
@@ -202,6 +232,58 @@
 	
 	});
              
+             
+             $scope.$on('breathesleep', function(){
+                 
+                 if(breathe==1)return;
+                 
+                 breathe=1;
+                 dental=0;
+                 polyklinic=0;
+                 kdclabs=0;
+                 $scope.page="breathesleep.htm";
+                 console.log("breathesleep");
+                 
+             });
+             
+               $scope.$on('dental', function(){
+                 
+                if(dental==1)return;
+                   
+                 breathe=0;
+                 dental=1;
+                 polyklinic=0;
+                 kdclabs=0;
+                 $scope.page="dental.htm";
+                 console.log("dental");
+                 
+             });
+             
+               $scope.$on('polyklinic', function(){
+                 
+                if(polyklinic==1)return;
+                   
+                 breathe=0;
+                 dental=0;
+                 polyklinic=1;
+                 kdclabs=0;
+                 $scope.page="infectious.htm";
+                 console.log("infectious");
+                 
+             });
+             
+                $scope.$on('kdclabs', function(){
+                 
+                if(kdclabs==1)return;
+                   
+                 breathe=0;
+                 dental=0;
+                 polyklinic=0;
+                 kdclabs=1;
+                 $scope.page="kdclabs.htm";
+                 console.log("infectious");
+                 
+             });
              
             
          });
