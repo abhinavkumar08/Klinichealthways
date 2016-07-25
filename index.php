@@ -13,13 +13,13 @@ $mail->IsHTML(true);
 $mail->Username = "klinichealthways.delhi@gmail.com";
 $mail->Password = "holocaust666";
 $mail->SetFrom("klinichealthways.delhi@gmail");
-$mail->Subject = "Test";
+$mail->Subject = "klinichealthways : Request for an Appointment";
 $mail->Body = "Name : " . $_POST['name'] . "<br />" . "Email Id : " . $_POST['emailid'] . "<br />" . "Phone Number : " . $_POST['phonenumber'] . "<br />" . "Message : " . $_POST['message'] . "<br />" . "Gender : " . $_POST['gender'];
 $mail->AddAddress("klinichealthways.delhi@gmail.com");
  if(!$mail->Send()) {
     echo "Mailer Error: " . $mail->ErrorInfo;
  } else {
- 	echo "Message has been sent";
+ 	
 	
  }
 
