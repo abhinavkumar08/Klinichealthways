@@ -19,7 +19,7 @@ $mail->AddAddress("klinichealthways.delhi@gmail.com");
  if(!$mail->Send()) {
     echo "Mailer Error: " . $mail->ErrorInfo;
  } else {
- 	
+ 	<script>alert("We have received your message. We will contact you on your email shortly");</script>
 	
  }
 
