@@ -48,7 +48,7 @@
 
 		<div class="menu-wrap">
 	
-		<nav class="navbar navbar-default">
+<!--		<nav class="navbar navbar-default">
   <div class="container-fluid">
    
     <ul class="nav navbar-nav menu">
@@ -61,8 +61,18 @@
     </ul>
   </div>
 </nav>
+		-->
 		
-		
+        <div class="menu-bar clearfix">
+            
+            <div ng-click="$emit('homeEvent')" class="header-li"><a class="header-li-pointer" href="#">Home</a></div>
+      <div ng-click="$emit('aboutEvent')" class="header-li"><a class="header-li-pointer" href="#">About Us</a></div>
+      <div ng-click="$emit('servicesEvent')" class="header-li"><a class="header-li-pointer" href="#">Services</a></div>
+      <div ng-click="$emit('contactEvent')" class="header-li"><a class="header-li-pointer" href="#">Contact Us</a></div>
+      <div ng-click="$emit('siteMapEvent')" class="header-li"><a class="header-li-pointer" href="#">Sitemap</a></div>
+        
+            
+        </div>    
 		
 		
 	</div>
