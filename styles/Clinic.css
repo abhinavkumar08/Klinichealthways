@@ -296,8 +296,10 @@ color: white !important;
 }
 .home-service-li
 {
-	margin : 0 20px;
+	margin : 0 60px;
 	cursor: pointer;
+	float: left;
+
 }
 .home-service-li:hover
  {
