@@ -67,7 +67,7 @@ background : green;
     margin: 10px 32px 20px 40px;
 }
 
-#phone-number
+.phone-number
 {	
 	float : right;
 	font-size: 30px !important;
