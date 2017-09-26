@@ -28,15 +28,16 @@ body
 	background : #EEEEEE !important;
 	font-family : Alice !important;
 	font-size :18px;
+	width: 100%;
 }
+/*
 .wrapper {
 	
     width: 100%;
     min-height: 1000px;
-    min-width: 2000px;
 
 }
-
+*/
 .top-view
 {
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5c5c8a+0,737373+100,207cca+100,737373+100 */
